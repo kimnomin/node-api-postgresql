@@ -1,9 +1,13 @@
 const express = require("express");
-const app = express();
 const indexRouter = require("./routes/index");
 const clientsRouter = require("./routes/client");
 const models = require("./models/index");
+const path = require("path");
+// using swagger..
+const swaggerUi = require("swagger-ui-express");
+const yaml = require("yamljs");
 
+const app = express();
 const port = 3001;
 
 // Setting..
@@ -42,3 +46,7 @@ models.sequelize
     console.log("연결 실패");
     console.log(err);
   });
+
+// using Swagger..
+const swaggerSpec = yaml.load(path.join(__dirname, "./swagger/build.yaml"));
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));

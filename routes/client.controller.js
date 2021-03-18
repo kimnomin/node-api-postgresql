@@ -1,4 +1,4 @@
-const { Client } = require("../models");
+const { Client, sequelize, Sequelize } = require("../models");
 
 const client = {
   findAll: (req, res, next) => {
@@ -8,6 +8,18 @@ const client = {
       })
       .catch((err) => {
         next(err);
+      });
+  },
+  findAllRawQuery: (req, res, next) => {
+    let query = "SELECT * FROM clients";
+
+    let client = sequelize
+      .query(query, {
+        type: Sequelize.QueryTypes.SELECT,
+        raw: true,
+      })
+      .then((client) => {
+        res.send(client);
       });
   },
   findOneById: (req, res, next) => {
@@ -37,7 +49,7 @@ const client = {
     Client.create(client)
       .then((result) => {
         console.log("Create.");
-        res.send(client);
+        res.send(result);
       })
       .catch((err) => {
         next(err);

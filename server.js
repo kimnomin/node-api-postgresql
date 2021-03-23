@@ -70,6 +70,9 @@ models.sequelize
   .catch((err) => {
     console.log("연결 실패");
     logger.error("Connect Database Faild..");
+    logger.error("Connect Database Faild..");
+    logger.error("Connect Database Faild..");
+    logger.error("Connect Database Faild..");
     console.log(err);
   });
 

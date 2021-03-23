@@ -99,6 +99,10 @@ models.sequelize
     logger.error("Connect Database Faild..");
     logger.error("Connect Database Faild..");
     logger.error("Connect Database Faild..");
+    logger.error("Connect Database Faild..");
+    logger.error("Connect Database Faild..");
+    logger.error("Connect Database Faild..");
+    logger.error("Connect Database Faild..");
     console.log(err);
   });
 

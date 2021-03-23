@@ -12,7 +12,7 @@ const client = {
   },
   findAllRawQuery: (req, res, next) => {
     let query = "SELECT * FROM clients";
-
+    throw err;
     let client = sequelize
       .query(query, {
         type: Sequelize.QueryTypes.SELECT,

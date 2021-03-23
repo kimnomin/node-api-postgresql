@@ -30,7 +30,6 @@ app.use("/clients", clientsRouter);
 // 에러 처리
 app.use((err, req, res, next) => {
   console.log("Server.js Error");
-  console.error(err);
 
   let errObj = {
     req: {

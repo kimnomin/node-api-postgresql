@@ -10,12 +10,14 @@ const yaml = require("yamljs");
 const app = express();
 const port = 3001;
 
+console.log("NODE_ENV", process.env.NODE_ENV);
+
 // Setting..
 app.use(express.json());
 
 // Route Start..
 app.use((req, res, next) => {
-  console.log("Every Api Process");
+  // console.log("Every Api Process");
   next();
 });
 
@@ -50,3 +52,5 @@ models.sequelize
 // using Swagger..
 const swaggerSpec = yaml.load(path.join(__dirname, "./swagger/build.yaml"));
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
+module.exports = app;

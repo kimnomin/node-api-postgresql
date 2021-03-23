@@ -46,7 +46,10 @@ app.use((err, req, res, next) => {
     user: req.user,
   };
 
+  // Write Error File..
   logger.error(`${moment().format("YYYY-MM-DD HH:mm:ss")}`, errObj);
+
+  // Reponse
   res.status(err.status || 500).json({
     message: err.message || "처리할 수 없습니다.",
   });

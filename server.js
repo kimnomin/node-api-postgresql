@@ -65,9 +65,11 @@ models.sequelize
   .sync()
   .then(() => {
     console.log("DB 연결 성공!");
+    logger.info("Connect Database Success..");
   })
   .catch((err) => {
     console.log("연결 실패");
+    logger.error("Connect Database Faild..");
     console.log(err);
   });
 

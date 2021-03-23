@@ -1,15 +1,16 @@
 const express = require("express");
-const indexRouter = require("./routes/index");
-const clientsRouter = require("./routes/client");
 const models = require("./models/index");
-const path = require("path");
 const moment = require("moment");
+const path = require("path");
 // using swagger..
 const swaggerUi = require("swagger-ui-express");
 const yaml = require("yamljs");
 // logger..
 const morgan = require("morgan");
 const { logger, stream } = require("./config/winston");
+// Routes..
+const indexRouter = require("./routes/index");
+const clientsRouter = require("./routes/client");
 
 const app = express();
 const port = 3001;

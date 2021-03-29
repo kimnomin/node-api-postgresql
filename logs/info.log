@@ -81,3 +81,17 @@
 {"message":"Connect Database Success..","level":"info"}
 {"message":"Connect Database Success..","level":"info"}
 {"message":"Connect Database Success..","level":"info"}
+{"message":"Connect Database Success..","level":"info"}
+{"message":"Connect Database Success..","level":"info"}
+{"message":"Connect Database Success..","level":"info"}
+{"message":"Connect Database Success..","level":"info"}
+{"message":"Connect Database Success..","level":"info"}
+{"message":"Connect Database Success..","level":"info"}
+{"message":"::1 - - [29/Mar/2021:05:30:54 +0000] \"GET /api-docs/ HTTP/1.1\" 200 3104 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36\"\n","level":"info"}
+{"message":"::1 - - [29/Mar/2021:05:30:54 +0000] \"GET /api-docs/swagger-ui-init.js HTTP/1.1\" 200 4589 \"http://localhost:3001/api-docs/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36\"\n","level":"info"}
+{"message":"::1 - - [29/Mar/2021:05:30:54 +0000] \"GET /api-docs/swagger-ui.css HTTP/1.1\" 200 143298 \"http://localhost:3001/api-docs/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36\"\n","level":"info"}
+{"message":"::1 - - [29/Mar/2021:05:30:54 +0000] \"GET /api-docs/swagger-ui-standalone-preset.js HTTP/1.1\" 200 336188 \"http://localhost:3001/api-docs/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36\"\n","level":"info"}
+{"message":"::1 - - [29/Mar/2021:05:30:54 +0000] \"GET /api-docs/swagger-ui-bundle.js HTTP/1.1\" 200 1079393 \"http://localhost:3001/api-docs/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36\"\n","level":"info"}
+{"message":"::1 - - [29/Mar/2021:05:30:54 +0000] \"GET /api-docs/favicon-32x32.png HTTP/1.1\" 200 628 \"http://localhost:3001/api-docs/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36\"\n","level":"info"}
+{"message":"Connect Database Success..","level":"info"}
+{"message":"Connect Database Success..","level":"info"}

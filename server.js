@@ -89,4 +89,16 @@ models.sequelize
 const swaggerSpec = yaml.load(path.join(__dirname, "./swagger/build.yaml"));
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+const WebSocket = require("ws");
+const wss = new WebSocket.Server({
+  port: 3003,
+});
+
+wss.on("connection", (ws) => {
+  ws.send("hello!!");
+  ws.on("message", (message) => {
+    console.log("Received: %s", message);
+  });
+});
+
 module.exports = app;

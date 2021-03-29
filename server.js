@@ -8,6 +8,9 @@ const yaml = require("yamljs");
 // logger..
 const morgan = require("morgan");
 const { logger, stream } = require("./config/winston");
+// kafka
+const consumer = require("./custom-modules/kafka-consumer");
+
 // Routes..
 const indexRouter = require("./routes/index");
 const clientsRouter = require("./routes/client");
@@ -69,6 +72,15 @@ models.sequelize
   })
   .catch((err) => {
     console.log("연결 실패");
+    logger.error("Connect Database Faild..");
+    logger.error("Connect Database Faild..");
+    logger.error("Connect Database Faild..");
+    logger.error("Connect Database Faild..");
+    logger.error("Connect Database Faild..");
+    logger.error("Connect Database Faild..");
+    logger.error("Connect Database Faild..");
+    logger.error("Connect Database Faild..");
+    logger.error("Connect Database Faild..");
     logger.error("Connect Database Faild..");
     console.log(err);
   });
